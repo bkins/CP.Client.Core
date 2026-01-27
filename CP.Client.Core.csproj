@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+    <!--NuGet Properties-->
+    <PackageId>CP.Client.Core</PackageId>
+    <Version>0.1.11</Version>
+    <Authors>Ben</Authors>
+    <Company>Personal</Company>
+    <Description>
+      Core client-side library for offline intent capture and
+      read-only Knowledge caching for the CP ecosystem.
+    </Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <!--/NuGet Properties-->
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Diagnostics\" />
+    <Folder Include="Internal\" />
+    <Folder Include="Knowledge\" />
+    <Folder Include="Serialization\" />
+    <Folder Include="Storage\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="CP.Shared.Primitives" Version="0.1.10" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\..\Application Documentation\The CP Universe\Natural Language Command System\API-Client-Library_Flow.md">
+      <Link>_Documentation\API-Client-Library_Flow.md</Link>
+    </Content>
+    <Content Include="..\..\..\Application Documentation\The CP Universe\Natural Language Command System\CP.Client.Core - Folder Structure.md">
+      <Link>_Documentation\CP.Client.Core - Folder Structure.md</Link>
+    </Content>
+    <Content Include="..\..\..\Application Documentation\The CP Universe\Natural Language Command System\CP.Client.Core - litmus Test.md">
+      <Link>_Documentation\CP.Client.Core - litmus Test.md</Link>
+    </Content>
+    <Content Include="..\..\..\Application Documentation\The CP Universe\Natural Language Command System\CP.Client.Core.md">
+      <Link>_Documentation\CP.Client.Core.md</Link>
+    </Content>
+    <Content Include="..\..\..\Scripts\CompleteCleanAndRebuild.ps1">
+      <Link>_Scripts\CompleteCleanAndRebuild.ps1</Link>
+    </Content>
+    <Content Include="..\..\..\Scripts\FilesAndFolders.ps1">
+      <Link>_Scripts\FilesAndFolders.ps1</Link>
+    </Content>
+    <Content Include="..\..\..\Scripts\publish-local-nuget.ps1">
+      <Link>_Scripts\publish-local-nuget.ps1</Link>
+    </Content>
+  </ItemGroup>
+</Project>
