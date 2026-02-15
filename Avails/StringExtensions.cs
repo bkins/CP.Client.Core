@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using CP.Shared.Primitives.Avails;
 
 namespace CP.Client.Core.Avails
 {
@@ -30,7 +29,12 @@ namespace CP.Client.Core.Avails
         {
             return Shared.Primitives.Avails.Extensions.StringExtensions.IsEqualTo(value, compareValue, comparisonType);
         }
-
+        
+        public static bool IsEqualTo (this string value, string compareValue)
+        {
+            return Shared.Primitives.Avails.Extensions.StringExtensions.IsEqualTo(value, compareValue);
+        }
+        
         public static bool IsNotEqualTo (this string      value
                                        , string           compareValue
                                        , StringComparison comparisonType)
@@ -38,6 +42,12 @@ namespace CP.Client.Core.Avails
             return Shared.Primitives.Avails.Extensions.StringExtensions.IsNotEqualTo(value, compareValue, comparisonType);
         }
 
+        public static bool IsNotEqualTo (this string      value
+                                       , string           compareValue)
+        {
+            return Shared.Primitives.Avails.Extensions.StringExtensions.IsNotEqualTo(value, compareValue);
+        }
+        
         public static bool IsInt (this string value)
         {
             return Shared.Primitives.Avails.Extensions.StringExtensions.IsInt(value);
