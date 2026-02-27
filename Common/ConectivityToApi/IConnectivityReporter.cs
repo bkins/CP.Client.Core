@@ -6,5 +6,6 @@ namespace CP.Client.Core.Common.ConectivityToApi
     {
         void ReportOnline();
         void ReportOffline(Exception cause);
+        void ReportOffline(string cause);
     }
 }

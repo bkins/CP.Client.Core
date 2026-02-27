@@ -4,7 +4,7 @@
     <Nullable>enable</Nullable>
     <!--NuGet Properties-->
     <PackageId>CP.Client.Core</PackageId>
-    <Version>0.1.38</Version>
+    <Version>0.1.44</Version>
     <Authors>Ben</Authors>
     <Company>Personal</Company>
     <Description>
@@ -22,7 +22,7 @@
     <Folder Include="Storage\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="CP.Shared.Primitives" Version="0.1.12" />
+    <PackageReference Include="CP.Shared.Primitives" Version="0.1.42" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="..\..\..\Application Documentation\The CP Universe\Natural Language Command System\API-Client-Library_Flow.md">
