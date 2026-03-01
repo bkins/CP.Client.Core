@@ -1,5 +1,5 @@
 
-namespace CP.Client.Core.Common.ConectivityToApi
+namespace CP.Client.Core.Common.ConnectivityToApi
 {
     public enum ConnectivityStatus
     {

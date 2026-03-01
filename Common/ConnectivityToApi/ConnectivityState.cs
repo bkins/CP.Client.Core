@@ -1,6 +1,6 @@
 using System;
 
-namespace CP.Client.Core.Common.ConectivityToApi
+namespace CP.Client.Core.Common.ConnectivityToApi
 {
     public sealed class ConnectivityState : IConnectivityState
                                           , IConnectivityReporter
@@ -12,7 +12,7 @@ namespace CP.Client.Core.Common.ConectivityToApi
         public string OffineCause { get; set; }
         public bool   IsOnline    => _current == ConnectivityStatus.Online;
         public bool   IsOffline   => _current == ConnectivityStatus.Offline;
-
+        
         public event EventHandler<ConnectivityStatus>? ConnectivityChanged;
 
         void IConnectivityReporter.ReportOnline()
@@ -29,6 +29,8 @@ namespace CP.Client.Core.Common.ConectivityToApi
             OffineCause = cause;
             SetState(ConnectivityStatus.Offline);
         }
+
+        public bool Online() => IsOnline;
 
         private void SetState(ConnectivityStatus next)
         {

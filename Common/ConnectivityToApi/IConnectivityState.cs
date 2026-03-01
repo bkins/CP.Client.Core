@@ -1,6 +1,6 @@
 using System;
 
-namespace CP.Client.Core.Common.ConectivityToApi
+namespace CP.Client.Core.Common.ConnectivityToApi
 {
     public interface IConnectivityState
     {
