@@ -5,6 +5,10 @@ namespace CP.Client.Core.Avails
 {
     public static class StringExtensions
     {
+        public static bool DoesNotHaveValueOrIsNullOrEmpty (this string value)
+        {
+            return value?.HasValue().Not() ?? true;
+        }
         public static bool HasValue(this string value)
         {
             return Shared.Primitives.Avails.Extensions.StringExtensions.HasValue(value);
