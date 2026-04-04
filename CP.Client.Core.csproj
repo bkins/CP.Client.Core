@@ -12,6 +12,7 @@
       read-only Knowledge caching for the CP ecosystem.
     </Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageIcon>appicon.png</PackageIcon>
     <!--/NuGet Properties-->
   </PropertyGroup>
   <ItemGroup>
@@ -46,5 +47,23 @@
     <Content Include="..\..\..\Scripts\publish-local-nuget.ps1">
       <Link>_Scripts\publish-local-nuget.ps1</Link>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="appicon.png" />
+    <Resource Include="appicon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <None Remove="appicon.svg" />
+    <Resource Include="appicon.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <None Remove="appicon.xcf" />
+    <Resource Include="appicon.xcf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <None Remove="appicon_background.ico" />
+    <Resource Include="appicon_background.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 </Project>
