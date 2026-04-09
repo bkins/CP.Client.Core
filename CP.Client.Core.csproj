@@ -12,7 +12,6 @@
       read-only Knowledge caching for the CP ecosystem.
     </Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageIcon>appicon.png</PackageIcon>
     <!--/NuGet Properties-->
   </PropertyGroup>
   <ItemGroup>
@@ -26,16 +25,16 @@
     <PackageReference Include="CP.Shared.Primitives" Version="0.1.45" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\..\Application Documentation\The CP Universe\Natural Language Command System\API-Client-Library_Flow.md">
+    <Content Include="..\..\..\Application Documentation\The CP Universe\_Core\API-Client-Library_Flow.md">
       <Link>_Documentation\API-Client-Library_Flow.md</Link>
     </Content>
-    <Content Include="..\..\..\Application Documentation\The CP Universe\Natural Language Command System\CP.Client.Core - Folder Structure.md">
+    <Content Include="..\..\..\Application Documentation\The CP Universe\_Archive\CP.Client.Core - Folder Structure.md">
       <Link>_Documentation\CP.Client.Core - Folder Structure.md</Link>
     </Content>
-    <Content Include="..\..\..\Application Documentation\The CP Universe\Natural Language Command System\CP.Client.Core - litmus Test.md">
+    <Content Include="..\..\..\Application Documentation\The CP Universe\_Archive\CP.Client.Core - litmus Test.md">
       <Link>_Documentation\CP.Client.Core - litmus Test.md</Link>
     </Content>
-    <Content Include="..\..\..\Application Documentation\The CP Universe\Natural Language Command System\CP.Client.Core.md">
+    <Content Include="..\..\..\Application Documentation\The CP Universe\_Archive\CP.Client.Core.md">
       <Link>_Documentation\CP.Client.Core.md</Link>
     </Content>
     <Content Include="..\..\..\Scripts\CompleteCleanAndRebuild.ps1">
@@ -49,19 +48,15 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <None Remove="appicon.png" />
     <Resource Include="appicon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <None Remove="appicon.svg" />
     <Resource Include="appicon.svg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <None Remove="appicon.xcf" />
     <Resource Include="appicon.xcf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <None Remove="appicon_background.ico" />
     <Resource Include="appicon_background.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
