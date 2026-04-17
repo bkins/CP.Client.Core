@@ -4,7 +4,7 @@
     <Nullable>enable</Nullable>
     <!--NuGet Properties-->
     <PackageId>CP.Client.Core</PackageId>
-    <Version>0.1.47</Version>
+    <Version>0.1.48</Version>
     <Authors>Ben</Authors>
     <Company>Personal</Company>
     <Description>
@@ -25,9 +25,6 @@
     <PackageReference Include="CP.Shared.Primitives" Version="0.1.45" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\..\Application Documentation\The CP Universe\_Core\API-Client-Library_Flow.md">
-      <Link>_Documentation\API-Client-Library_Flow.md</Link>
-    </Content>
     <Content Include="..\..\..\Application Documentation\The CP Universe\_Archive\CP.Client.Core - Folder Structure.md">
       <Link>_Documentation\CP.Client.Core - Folder Structure.md</Link>
     </Content>
