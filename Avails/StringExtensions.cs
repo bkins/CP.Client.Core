@@ -9,9 +9,12 @@ namespace CP.Client.Core.Avails
         {
             return value?.HasValue().Not() ?? true;
         }
-        public static bool HasValue(this string value)
+        
+        public static bool HasValue(this string? value)
         {
-            return Shared.Primitives.Avails.Extensions.StringExtensions.HasValue(value);
+            return value != null 
+                && Shared.Primitives.Avails.Extensions.StringExtensions.HasValue(value);
+
         }
 
         public static bool HasNoValue (this string value)
@@ -22,6 +25,12 @@ namespace CP.Client.Core.Avails
         public static bool DoesNotContain (this List<string> value, string searchTerm)
         {
             return Shared.Primitives.Avails.Extensions.StringExtensions.DoesNotContain(value, searchTerm);
+        }
+
+        public static bool DoesNotContainOrNull( this string? value
+                                               , string?      searchTerm )
+        {
+            return Shared.Primitives.Avails.Extensions.StringExtensions.DoesNotContainOrNull(value, searchTerm);
         }
 
         public static bool IsEmptyNullOrWhiteSpace (this string value)

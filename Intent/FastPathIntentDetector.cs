@@ -28,7 +28,7 @@ namespace CP.Client.Core.Intent
     public static class FastPathIntentDetector
     {
         // Prefix must be the FIRST token: "Journal:" / "AddJournalEntry:" etc.
-        private static readonly Regex PrefixRegex = new Regex(@"^\s*(?<name>[A-Za-z][A-Za-z0-9_-]{1,39})\s*:\s*(?<payload>.+)$",
+        private static readonly Regex PrefixRegex = new Regex(RegexMatchingPatterns.NamedPayloadPattern,
                                                               RegexOptions.Compiled);
 
         public static bool IsFastPathIntent(string? input) => TryGetPrefix(input, out _, out _);

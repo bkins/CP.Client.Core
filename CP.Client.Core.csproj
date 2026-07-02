@@ -4,7 +4,7 @@
     <Nullable>enable</Nullable>
     <!--NuGet Properties-->
     <PackageId>CP.Client.Core</PackageId>
-    <Version>0.1.51</Version>
+    <Version>0.1.59</Version>
     <Authors>Ben</Authors>
     <Company>Personal</Company>
     <Description>
@@ -22,18 +22,9 @@
     <Folder Include="Storage\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="CP.Shared.Primitives" Version="0.1.45" />
+    <PackageReference Include="CP.Shared.Primitives" Version="0.1.52" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\..\Application Documentation\The CP Universe\_Archive\CP.Client.Core - Folder Structure.md">
-      <Link>_Documentation\CP.Client.Core - Folder Structure.md</Link>
-    </Content>
-    <Content Include="..\..\..\Application Documentation\The CP Universe\_Archive\CP.Client.Core - litmus Test.md">
-      <Link>_Documentation\CP.Client.Core - litmus Test.md</Link>
-    </Content>
-    <Content Include="..\..\..\Application Documentation\The CP Universe\_Archive\CP.Client.Core.md">
-      <Link>_Documentation\CP.Client.Core.md</Link>
-    </Content>
     <Content Include="..\..\..\Scripts\CompleteCleanAndRebuild.ps1">
       <Link>_Scripts\CompleteCleanAndRebuild.ps1</Link>
     </Content>
