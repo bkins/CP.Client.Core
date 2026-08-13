@@ -4,7 +4,7 @@
     <Nullable>enable</Nullable>
     <!--NuGet Properties-->
     <PackageId>CP.Client.Core</PackageId>
-    <Version>1.1.0.0</Version>
+    <Version>1.1.0.45</Version>
     <Authors>Ben</Authors>
     <Company>Personal</Company>
     <Description>
