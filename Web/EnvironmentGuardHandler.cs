@@ -3,6 +3,7 @@ using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 using CP.Client.Core.Avails;
+using CP.Shared.Primitives.Avails.Extensions;
 
 namespace CP.Client.Core.Web
 {

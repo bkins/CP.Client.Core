@@ -4,7 +4,7 @@
     <Nullable>enable</Nullable>
     <!--NuGet Properties-->
     <PackageId>CP.Client.Core</PackageId>
-    <Version>1.1.0.45</Version>
+    <Version>1.1.0.47</Version>
     <Authors>Ben</Authors>
     <Company>Personal</Company>
     <Description>
@@ -22,7 +22,8 @@
     <Folder Include="Storage\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="CP.Shared.Primitives" Version="1.0.0" />
+    <PackageReference Include="CP.Shared.Primitives" Version="1.1.0.47" />
+    <PackageReference Include="System.Text.Json" Version="8.0.5" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="..\..\..\Scripts\CompleteCleanAndRebuild.ps1">
